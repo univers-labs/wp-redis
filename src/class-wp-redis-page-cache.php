@@ -229,7 +229,7 @@ class WP_Redis_Page_Cache
         $this->req_key = "{$this->key}_reqs";
     }
 
-    protected function status_header($status_header, $status_code)
+    public function status_header($status_header, $status_code)
     {
         $this->status_header = $status_header;
         $this->status_code = $status_code;
